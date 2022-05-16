@@ -10,21 +10,30 @@ body{
     background-color: #ffff;
 }
 
+img{
+    width: 100%;
+}
+
+/* Navigazione */
+header{
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #d0d0d3;
+    /* z-index: 1; */
+}
+
 .container-header{
     width: 100%;
     margin: 0 auto;
     padding: 10px;
 }
 
-header{
-    border-bottom: 0.5px solid #828282;
-}
-
-/* Navigazione */
 .content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .logo{
@@ -39,16 +48,130 @@ ul{
 li{
     display: inline-block;
     list-style: none;
-    padding: 0 20px;
-    color: #828282;
+    padding-right: 30px;
+    color: black;
 }
 
 a{
     text-decoration: none;
 }
 
-.btn-action{
+.btn{
     background-color: #0061ff;
     color: white;
+}
+
+.action{
     padding: 5px 15px;
+}
+
+/* Parte centrale */
+.container-main{
+    max-width: 1300px;
+    margin: 0 auto
+}
+
+.bg-top{
+    background-color: #b4d0e7;
+    height: 800px;
+}
+
+.jumbo-img{
+    width: 1000px;
+}
+
+.title-top{
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.option{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.active{
+    background-color: white;
+    border: 5px solid #0061ff;
+}
+
+.normal{
+    background-color: white;
+    border: 1px solid #828282;
+    margin-left: 30px;
+}
+
+h2{
+    font-size: 50px;
+    margin: 50px 0;
+}
+
+h4{
+    font-size: 30px;
+}
+
+.card{
+    border: 1px solid #d0d0d3;
+    width: calc(100% / 3 - 30px);
+    height: 900px;
+    margin: 50px 0;
+}
+
+.type{
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #d0d0d3;
+}
+
+.plan{
+    padding: 40px;
+}
+
+.price{
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.period{
+    color: #828282;
+    padding-bottom: 20px;
+}
+
+.list{
+    padding: 20px 0;
+}
+
+.list ul li{
+    margin-top: 15px;
+}
+
+.info{
+    font-weight: 700;
+}
+
+hr{
+    width: 60px;
+    margin: 50px 0;
+    border: 1px solid #d0d0d3;
+}
+
+.plus{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.link{
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+#check{
+    color: #0061ff;
 }
